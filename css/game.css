@@ -1,0 +1,262 @@
+
+
+  body{
+    overflow: hidden;
+    margin:0;
+  }
+  .game_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color:#006D04 ;
+  }
+
+  #bot_board_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+  }
+  #center_board_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+  }
+  #player_board_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+  }
+
+
+  .bot_cards, .player_cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  #remaining_deck, #briscola_card, #first_bot_card, #second_bot_card, #third_bot_card, #first_player_card, #second_player_card, #third_player_card, #played_card_bot, #played_card_player {
+    position: relative;
+  }
+  #remaining_deck img, #briscola_card img, #first_bot_card img, #second_bot_card img, #third_bot_card img, #first_player_card img, #second_player_card img, #third_player_card img, #played_card_bot img, #played_card_player img{
+    position: absolute;
+  }
+  #remaining_deck:hover{
+    cursor: pointer;
+  }
+  
+  #first_bot_card,#second_bot_card,#third_bot_card,#first_player_card,#second_player_card,#third_player_card,#briscola_card, #played_card_bot, #played_card_player, #remaining_deck,#player_taken_cards, #bot_taken_cards {
+    border:0.1vh solid #fff;
+    border-radius: 1vh;
+    width:10.66vh; 
+    height: 16vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .card_selection{
+    border: 0.3vh solid #9BFF80 !important;
+  }
+
+  .card_selection:hover{
+    border:0.5vh solid #37FF00 !important;
+  }
+  #second_bot_card,#second_player_card{
+    margin: 0 1vw;
+  }
+  #briscola_card{
+    margin-left:1vw;
+  }
+  .bot_taken_cards, .player_taken_cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    right: 25vw;
+  }
+
+  #player_taken_cards {
+    bottom: 0;
+  }
+  #bot_taken_cards {
+    top: 0;
+  }
+
+
+
+  .remaining_cards_number {
+    position: absolute;
+    top: 50%; 
+    left: 43%; 
+    transform: translate(-50%, -50%); 
+    z-index: 2;
+    font-size: 20px; 
+    padding: 10px;
+    border-radius: 50%;
+    background-color: white; 
+    color: black;
+  }
+
+
+  #played_card_player,#played_card_bot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+ }
+#played_card_player{
+  margin-bottom: 5vh;
+}
+#played_card_bot{
+  margin-top: 5vh;
+}
+  
+
+  #back_to_home_container {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #back_to_home_img{
+    height:6vh;
+    width:6vh;
+  }
+  @keyframes shuffle {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-2vw); }
+    50% { transform: translateX(0); }
+    75% { transform: translateX(2vw); }
+    100% { transform: translateX(0); }
+  }
+  
+  .shuffle {
+    animation: shuffle 0.7s linear infinite;
+  }
+  .shuffle-reverse {
+    animation: shuffle 0.7s linear infinite reverse;
+  }
+
+
+
+
+
+.endgame_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #006D04;
+
+}
+.endgame_result_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+#endgame_message_container{
+  text-align: center;
+}
+.bot_cards_review, .player_cards_review {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display:flex;
+  box-sizing: border-box;
+  width: 100vw;
+}
+
+
+
+
+.bot_cards_review img , .player_cards_review img {
+  border-radius: 1vh;
+  width: 5vw;
+  height: auto;
+  opacity: 0.9;
+
+}
+
+.endgame_btn_container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 1vh;
+}
+.endgame_btn_container button{
+  border-radius: 1vh;
+  margin: 0 1vw;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  font-family: 'MainFont';
+}
+#new_game_btn{
+  background: #A8F7AC;
+}
+#new_game_btn:hover{
+  background: #11C11A;
+}
+#endgame_back_to_home_btn{
+background: #A8F7AC;
+}
+#endgame_back_to_home_btn:hover{
+  background: #11C11A;
+}
+#endgame_message,#bot_points, #player_points{
+  font-family:'MainFont' ;
+  margin: 0.5vh 0;
+}
+#endgame_message{
+  font-size: 2rem;
+}
+.win_style{
+  color: #1EFF00;
+  font-size: 1.75rem;
+}
+.lose_style{
+  color: #FF0000;
+  font-size: 1.25rem;
+}
+.draw_style{
+  color: #B4B6B4;
+  font-size: 1.5rem;
+}
+
+.lose_style_img > * {
+  border:0.1vh solid #FF0000;
+}
+
+.win_style_img > * {
+  border:0.1vh solid #1EFF00;
+}
+
+.draw_style_img > * {
+  border:0.1vh solid #B4B6B4;
+}

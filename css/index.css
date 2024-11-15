@@ -1,0 +1,92 @@
+
+
+
+.hidden{
+    display: none !important;
+}
+#div_audio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom:0;
+    left:0;
+  }
+  
+  #audiobutton {
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  #audioicon {
+    width: 6vh;
+    height: 6vh;
+  }
+  
+  #setvolume{
+    width: 15vh;
+    height: 5vh;
+    cursor: pointer;
+  }
+
+  .more_info{
+    position : fixed;
+    bottom:2.5vh;
+    right:2.5vh;
+    z-index: 1;
+}
+
+.more_info img{
+    width: 5vh;
+    height: 5vh; 
+}
+
+
+  
+  @font-face {
+    font-family: 'TitleFont';
+    src:  url(./fonts/Title/Poker.woff2) format('woff2'),
+          url(./fonts/Title/Poker.woff) format('woff'),
+          url(./fonts/Title/Poker.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'MainFont';
+    src: url(./fonts/Main/CardenioModern-Regular.woff2) format('woff2'),
+         url(./fonts/Main/CardenioModern-Regular.woff) format('woff'),
+         url(./fonts/Main/CardenioModern-Regular.ttf) format('truetype');
+  }
+
+
+  @font-face{
+    font-family: 'ErrorFont';
+    src: url(./fonts/ErrorMessage/Error.woff2) format('woff2'),
+         url(./fonts/ErrorMessage/Error.woff) format('woff'),
+         url(./fonts/ErrorMessage/Error.ttf) format('truetype');
+  }
+
+
+
+
+  html {
+    font-size: 20px; 
+  }
+
+  @media (max-width: 1200px) {
+    html {
+      font-size: 18px; 
+    }
+  }
+
+  @media (max-width: 900px) {
+    html {
+      font-size: 16px; 
+    }
+  }
+
+  @media (max-width: 600px) {
+    html {
+      font-size: 14px; 
+    }
+  }
