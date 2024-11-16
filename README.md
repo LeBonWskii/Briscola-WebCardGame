@@ -1,4 +1,4 @@
-## Briscola Web Game 🎴
+## Briscola Web Game 🃏
 Welcome to Briscola Web Game, a web-based implementation of the classic Italian card game Briscola. Designed with simplicity and functionality in mind, this project allows players to enjoy traditional gameplay with modern features like account management, leaderboards, and deck customization.
 
 ## Features
