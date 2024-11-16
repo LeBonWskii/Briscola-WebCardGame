@@ -19,6 +19,7 @@ Welcome to Briscola Web Game, a web-based implementation of the classic Italian 
 Backend
 - PHP: Core logic for handling game mechanics, user authentication, and database interactions.
 - MySQL: Database for storing user data, scores, and leaderboard rankings.
+  
 Frontend
 - HTML, CSS, and JavaScript: Used to create a dynamic, responsive, and visually appealing user interface.
 - AJAX: Ensures smooth communication between frontend and backend without page reloads.
