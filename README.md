@@ -39,11 +39,11 @@ Welcome to Briscola Web Game, a web-based implementation of the classic Italian 
    - Create a new database called `BriscolaDB`.  
    - Import the database schema:  
      - Click on the `BriscolaDB` database in phpMyAdmin.  
-     - Select the **Import** tab and upload the SQL file located [here](https://github.com/LeBonWskii/Briscola-WebCardGame/sql/BriscolaDB.sql).  
+     - Select the **Import** tab and upload the SQL file located [here]((https://github.com/LeBonWskii/Briscola-WebCardGame/blob/main/sql/BriscolaDB.sql)).  
      - Execute the import.
 
 3. **Update the Database Connection**  
-   - Locate the `connection.php` file [here](https://github.com/LeBonWskii/Briscola-WebCardGame/php/connection.php).  
+   - Locate the `connection.php` file [here](https://github.com/LeBonWskii/Briscola-WebCardGame/blob/main/php/connection.php).  
    - Ensure the database connection credentials match your MySQL setup. Example:
      ```php
      <?php
