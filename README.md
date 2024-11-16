@@ -22,4 +22,43 @@ Welcome to Briscola Web Game, a web-based implementation of the classic Italian 
 ### Frontend
 - HTML, CSS, and JavaScript: Used to create a dynamic, responsive, and visually appealing user interface.
 - AJAX: Ensures smooth communication between frontend and backend without page reloads.
+## Getting Started ⚙
+
+### Prerequisites
+- **XAMPP**: A local development environment for PHP and MySQL.
+- A web browser to access the game (e.g., Chrome, Firefox).
+
+### Setup Instructions
+
+1. **Install and Configure XAMPP**  
+   - Download and install [XAMPP](https://www.apachefriends.org/index.html) on your system.  
+   - Start the Apache and MySQL services using the XAMPP control panel.  
+
+2. **Set Up the Database**  
+   - Open **phpMyAdmin** by navigating to `http://localhost/phpmyadmin` in your browser.  
+   - Create a new database called `BriscolaDB`.  
+   - Import the database schema:  
+     - Click on the `BriscolaDB` database in phpMyAdmin.  
+     - Select the **Import** tab and upload the SQL file located at `sql/BriscolaDB.sql`.  
+     - Execute the import.
+
+3. **Update the Database Connection**  
+   - Locate the `connection.php` file in the `php/` folder of the project.  
+   - Ensure the database connection credentials match your MySQL setup. Example:
+     ```php
+     <?php
+      DEFINE('DB_HOST', 'mysql:host=localhost:3306;dbname=BriscolaDB;charset=utf8');
+      DEFINE('DB_USER', 'root');
+      DEFINE('DB_PASSWORD', 'YourPassword');
+     ?>
+     ```
+
+4. **Move the Project to the XAMPP Directory**  
+   - Copy the project folder to the `htdocs` directory inside your XAMPP installation (default path: `C:/XAMPP/htdocs`).
+
+5. **Run the Application**  
+   - Open your browser and type `http://localhost/` in the address bar.  
+   - Click on the project folder name to start the game.
+
+6. **Enjoy the Game** 🎉  
 
