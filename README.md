@@ -60,5 +60,5 @@ Welcome to Briscola Web Game, a web-based implementation of the classic Italian 
    - Open your browser and type `http://localhost/` in the address bar.  
    - Click on the project folder name to start the game.
 
-6. **Enjoy the Game** 🎉  
+6. **Enjoy the Game** 🎮  
 
